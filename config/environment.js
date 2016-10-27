@@ -6,6 +6,12 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    EmberENV: {
+      FEATURES: {
+        // Here you can enable experimental features on an ember canary build
+        // e.g. 'with-controller': true
+      }
+    },
     firebase: {
       apiKey: "AIzaSyCgC1lLRqKgc7kXCJfIcFq7l-hgX_YIjAU",
       authDomain: "better-rentals.firebaseapp.com",
@@ -17,12 +23,6 @@ module.exports = function(environment) {
      'script-src': "'self' 'unsafe-eval' apis.google.com",
      'frame-src': "'self' https://*.firebaseapp.com",
      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
-    },
-    EmberENV: {
-      FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
-      }
     },
 
     APP: {
