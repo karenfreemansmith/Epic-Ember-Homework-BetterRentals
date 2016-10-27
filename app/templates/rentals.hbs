@@ -6,7 +6,7 @@
     About Us
   {{/link-to}}
 </div>
-
+{{new-rental saveRental="saveRental"}}
 {{#each model as |rental|}}
   {{rental-listing rental=rental destroyRental="destroyRental"}}
 {{/each}}
