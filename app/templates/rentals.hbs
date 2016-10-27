@@ -8,5 +8,5 @@
 </div>
 {{new-rental saveRental="saveRental"}}
 {{#each model as |rental|}}
-  {{rental-listing rental=rental destroyRental="destroyRental"}}
+  {{rental-listing rental=rental update="update" destroyRental="destroyRental"}}
 {{/each}}
